@@ -10,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'CleverLearningWebsite';
+  imagePath = 'src/public/assets/Image/asp.jpeg';
 }
