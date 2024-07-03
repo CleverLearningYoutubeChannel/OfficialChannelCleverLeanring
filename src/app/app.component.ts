@@ -33,5 +33,6 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'Clever Learning'.split('');
-  imagePath = 'src/public/assets/Image/asp.jpeg';
+  clever = 'Clever'.split('');
+  learning = 'Learning'.split('');
 }
