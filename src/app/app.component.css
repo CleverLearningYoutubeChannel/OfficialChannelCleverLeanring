@@ -6,6 +6,8 @@
     height: 100vh;
     background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 20px;
   }
   
   h1 {
@@ -21,9 +23,10 @@
   }
   
   p {
-    background-color:#f00;
+    background-color: #f00;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    margin-top: 20px;
   }
   
   @keyframes fadeInBounce {
@@ -52,6 +55,29 @@
     100% {
       opacity: 0;
       transform: translateX(100%);
+    }
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 0.875rem;
+      padding: 0.5rem;
     }
   }
   

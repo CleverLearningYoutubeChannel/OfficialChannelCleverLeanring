@@ -12,10 +12,19 @@ nav {
     font-weight: bold;
   }
   
+  .navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
   ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
   }
   
   ul li a {
@@ -29,5 +38,44 @@ nav {
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+  
+    ul {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  
+    ul.active {
+      display: flex;
+    }
+  
+    .get-started {
+      display: none;
+    }
+  }
+  ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem; /* Adjust padding for better visual effect */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Add transition for background color */
+  }
+  
+  ul li a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #4CAF50; /* Change background color on hover */
+    border-radius: 4px; /* Optional: add rounded corners for better appearance */
   }
   
