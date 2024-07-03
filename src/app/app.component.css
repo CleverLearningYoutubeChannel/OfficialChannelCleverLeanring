@@ -1,0 +1,57 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    display: flex;
+  }
+  
+  h1 span {
+    display: inline-block;
+    animation: fadeInBounce 2s ease-in-out, hideLetter 3s ease-in-out infinite;
+    animation-delay: 2s; /* Ensure this starts after the initial bounce animation */
+  }
+  
+  p {
+    background-color:#f00;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeInBounce {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(15%);
+    }
+    70% {
+      transform: translateY(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes hideLetter {
+    0%, 80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+  

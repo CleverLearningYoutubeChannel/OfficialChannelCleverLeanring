@@ -1,2 +1,8 @@
-<h1>helo</h1>
-
+<app-navbar></app-navbar>
+<div class="hero" [@fadeInOut]>
+  <h1 [@bounce]>
+    <span *ngFor="let char of title; let i = index" [ngStyle]="{'animation-delay': (i * 0.1) + 's'}">{{ char }}</span>
+  </h1>
+  <p>Read More</p>
+</div>
+<app-footer></app-footer>
