@@ -1,0 +1,8 @@
+<div class="hero">
+    <h1>
+      <span *ngFor="let char of 'CLEVER'.split(''); let i = index" class="char" [ngStyle]="{'animation-delay': (i * 0.1) + 's'}">{{ char }}</span>
+      <span *ngFor="let char of 'LEARNING'.split(''); let i = index" class="char learning" [ngStyle]="{'animation-delay': ('CLEVER'.length * 0.1 + i * 0.1) + 's'}">{{ char }}</span>
+    </h1>
+    <p>Read More</p>
+  </div>
+  

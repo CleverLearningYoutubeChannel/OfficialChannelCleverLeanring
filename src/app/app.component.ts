@@ -3,11 +3,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ NavbarComponent,CommonModule,FooterComponent],
+  imports: [ NavbarComponent,CommonModule,FooterComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
@@ -35,4 +36,9 @@ export class AppComponent {
   title = 'Clever Learning'.split('');
   clever = 'Clever'.split('');
   learning = 'Learning'.split('');
+  menuActive = false;
+
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
+  }
 }

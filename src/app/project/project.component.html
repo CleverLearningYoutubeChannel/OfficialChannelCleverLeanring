@@ -1,0 +1,17 @@
+<div class="project-section">
+    <h2>PROJECTS</h2>
+    <div class="cart-container">
+      <div class="cart-item" *ngFor="let item of cartItems">
+        <img [src]="item.image" alt="{{item.name}}" class="cart-item-image">
+        <div class="cart-item-details">
+          <h3 class="cart-item-name">{{item.name}}</h3>
+          <p class="cart-item-description">{{item.description}}</p>
+          <div class="cart-item-footer">
+            <span class="cart-item-price">RS-{{item.price}}</span>
+            <button class="buy-button" (click)="redirectToPayment(item.buyUrl)">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
