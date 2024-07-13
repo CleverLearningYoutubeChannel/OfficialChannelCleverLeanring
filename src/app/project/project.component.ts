@@ -16,6 +16,13 @@ export class ProjectComponent {
       description: 'This is asp project to download',
       price: 60,
       buyUrl: 'https://rzp.io/l/CLTeam'
+    },
+    {
+      image: 'assets/img/pic2.jpg',
+      name: 'PHP Project',
+      description: 'This PHP Project',
+      price: 60,
+      buyUrl: ''
     }
    
   ];
